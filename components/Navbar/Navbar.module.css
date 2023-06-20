@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: medium;
+  color: #25615f;
+  text-decoration: none;
+  font-family: 'PT Sans';
+  font-size: 16px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #25615f;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.customList {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.customList li {
+  margin-left: 40px;
+}
+
+.customList li:first-child {
+  margin-left: 0;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar > nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.registerButton {
+  border-radius: 18px;
+  background-color: #25615f;
+  padding: 4px 12px;
+  font-size: 12px;
+  border: 1px solid #25615f;
+  color: #ffffff;
+ 
+}
+

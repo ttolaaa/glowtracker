@@ -1,0 +1,171 @@
+.loginContainer {
+    display: flex;
+    flex-direction: row;
+    font-family: "PT Sans";
+    height: 100vh;
+    font-size: 14px;
+  }
+  
+  .rightColumn {
+    flex: 2;
+  }
+  
+  .leftColumn {
+    flex: 1;
+  }
+  
+  .pleftColumn,
+  .hleftColumn {
+    padding: 0 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .pleftColumn {
+    font-size: small;
+  }
+  
+  .leftColumn {
+    background-color: #f1cdd7;
+    color: #865c6c;
+  }
+  
+  .prightColumn,
+  .hrightColumn {
+    padding: 5px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #865c6c;
+  }
+  
+  .googleButtonContainer {
+    padding: 0 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .orContainer {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .or {
+    margin: 0 10px;
+    color: #865c6c;
+  }
+  
+  .orLine {
+    height: 1px;
+    background-color: #865c6c;
+    width: 195px;
+  }
+  
+  .pemailField {
+    color: #865c6c;
+  }
+  
+  .emailField {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .inputemailField {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #e9e9ea;
+    background-color: #e9e9ea;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .inputemailField:hover {
+    border-color: #f1cdd7;
+    border: 3px solid #f1cdd7;
+  }
+  
+  .loginButton {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .btnloginButton {
+    width: 100px;
+    background-color: #865c6c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .ppwdField {
+    color: #865c6c;
+  }
+  
+  .pwdField {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .inputpwdField {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #e9e9ea;
+    background-color: #e9e9ea;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .inputpwdField:hover {
+    border-color: #f1cdd7;
+    border: 3px solid #f1cdd7;
+  }
+  
+  .pforgetPwd {
+    color: #4d45cb;
+  }
+  
+  .forgetPwd {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  /* Responsive styles for smaller devices */
+  @media screen and (max-width: 768px) {
+    .loginContainer {
+      flex-direction: column;
+    }
+  
+    .leftColumn {
+      display: none;
+    }
+  
+    .rightColumn {
+      flex: 1;
+      width: 100%;
+    }
+  
+    .prightColumn,
+    .hrightColumn,
+    .googleButtonContainer,
+    .orContainer,
+    .emailField,
+    .pwdField,
+    .forgetPwd {
+      padding: 10px;
+      padding-right: 10%;
+      padding-left: 5%;
+    }
+  
+    .inputemailField,
+    .inputpwdField {
+      width: 100%;
+    }
+  }
+  

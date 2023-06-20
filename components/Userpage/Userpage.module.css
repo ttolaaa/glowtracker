@@ -1,0 +1,107 @@
+.userpageContainer {
+    display: flex;
+    flex-direction: row;
+    font-family: "PT Sans";
+    height: 100vh;
+    font-size: 14px;
+  }
+  
+  .rightColumn {
+    flex: 3;
+  }
+  
+  .leftColumn {
+    padding-top: 10px;
+    flex: 1;
+    background-color: #e5e8ff;
+    color: #865c6c;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .leftColumn p {
+    margin-top: -10px;
+    padding-left: 30px;
+    max-width: 100%;
+  }
+  
+  .logoImg {
+    height: 100px;
+    width: auto;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    border: 1px solid #b7bce2;
+    width: 100%;
+  }
+  
+  .calendarHeader {
+    text-align: center;
+    padding: 10px;
+    background-color: #b7bce2;
+    color: white;
+  }
+  
+  .calendarCell {
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #b7bce2;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .prevMonth,
+  .nextMonth {
+    width: 100px;
+    background-color: #e5e8ff;
+    color: #866118;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .currentMonth {
+    color: #865c6c;
+    font-weight: bold;
+  }
+  
+  /* Responsive styles for smaller devices */
+  @media screen and (max-width: 768px) {
+    .userpageContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .leftColumn,
+    .rightColumn {
+      flex: 1;
+      width: 100%;
+    }
+  
+    .leftColumn {
+      padding: 10px;
+    }
+  
+    .calendar {
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      grid-template-rows: repeat(6, auto);
+    }
+  
+    .calendarCell {
+      padding: 20px;
+      font-size: 12px; /* Adjust the font size as needed */
+    }
+  }
+  

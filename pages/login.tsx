@@ -1,9 +1,10 @@
-import { Navbar } from '../components/Navbar';
+import Loginpage from '@/components/Login/Loginpage';
+import { Navbar } from '../components/Navbar/Navbar';
 
 const Login: React.FC = () => {
     return (    
         <div>
-            <h1>LOGIN</h1>
+            <Loginpage/>
         </div>
     );
   };

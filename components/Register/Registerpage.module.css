@@ -1,0 +1,209 @@
+.loginContainer {
+  display: flex;
+  flex-direction: row;
+  font-family: "PT Sans";
+  height: 100vh;
+  font-size: 14px;
+}
+.rightColumn {
+  flex: 2;
+}
+.leftColumn {
+  flex: 1;
+}
+.pleftColumn,
+.hleftColumn {
+  padding: 0 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.pleftColumn {
+  font-size: small;
+}
+.leftColumn {
+  background-color: #f2d184;
+  color: #866118;
+}
+
+.prightColumn,
+.hrightColumn {
+  padding: 5px 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #865c6c;
+}
+
+.googleButtonContainer {
+  padding: 0 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.orContainer {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.or {
+  margin: 0 10px;
+  color: #865c6c;
+}
+
+.orLine {
+  height: 1px;
+  background-color: #865c6c;
+  width: 195px;
+}
+.pemailField {
+  color: #865c6c;
+}
+
+.emailField {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.inputemailField {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #e9e9ea;
+  background-color: #e9e9ea;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+.inputemailField:hover {
+  border-color: #f2d184;
+  border: 3px solid #f2d184;
+}
+.registerButton {
+    padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.btnregisterButton {
+  width: 200px;
+  background-color: #f2d184;
+  color: #866118;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ppwdField {
+  color: #865c6c;
+}
+
+.pwdField {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.inputpwdField {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #e9e9ea;
+  background-color: #e9e9ea;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+.inputpwdField::placeholder{
+    font-size: 12px;
+    color: #865c6c;
+}
+
+
+.inputpwdField:hover {
+  border-color: #f2d184;
+  border: 3px solid #f2d184;
+}
+
+.pforgetPwd {
+  color: #4d45cb;
+}
+
+.forgetPwd {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.checkbox {
+  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #865c6c
+  
+}
+.checkboxInput {
+  display: none;
+}
+.checkboxCustom {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 8px;
+  position: relative;
+}
+.checkboxCustom::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.checkboxInput:checked + .checkboxCustom::before {
+  background-color: #4d45cb;
+}
+
+/* Responsive styles for smaller devices */
+@media screen and (max-width: 768px) {
+    .loginContainer {
+      flex-direction: column;
+    }
+  
+    .rightColumn {
+      flex: 1;
+      align-items: flex-start;
+    }
+  
+    .leftColumn {
+      display: none;
+    }
+   
+    .prightColumn,
+    .hrightColumn,
+    .googleButtonContainer,
+    .orContainer,
+    .pemailField,
+    .emailField,
+    .registerButton,
+    .ppwdField,
+    .pwdField,
+    .forgetPwd,
+    .checkbox {
+      padding: 0 20px;
+      padding-right: 10%;
+    }
+  
+    .inputemailField,
+    .inputpwdField {
+      width: 100%;
+    }
+  }
+  
